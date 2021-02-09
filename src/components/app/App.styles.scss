@@ -1,0 +1,13 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+
+    .title {
+        padding: 40px 0px 50px 0px;
+        color: rgb(226, 183, 43);
+        letter-spacing: 1px;
+    }
+}

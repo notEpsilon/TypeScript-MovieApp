@@ -1,0 +1,19 @@
+.card {
+    width: 280px;
+    height: 450px;
+    margin-top: 15px;
+    
+    .imger {
+        width: 100%;
+        height: 90%;
+        border-radius: 8px;
+    }
+
+    .sub-text {
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+    }
+}

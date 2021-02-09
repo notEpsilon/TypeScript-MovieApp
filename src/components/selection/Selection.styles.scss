@@ -1,0 +1,41 @@
+.sel-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    
+    img {
+        min-height: 400px;
+        height: 400px;
+        margin: 15px 0 0 15px;
+    }
+
+    .container {
+        width: 1220px;
+        padding-top: 80px;
+
+        .elem {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        button {
+            outline: none;
+            width: 110px;
+            height: 25px;
+            border: none;
+            border-radius: 11px;
+            background-color: #8da11a;
+            color: white;
+            letter-spacing: 1px;
+            box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.24);
+
+            &:hover {
+                background-color: #7a8b14;
+            }
+        }
+    }
+}

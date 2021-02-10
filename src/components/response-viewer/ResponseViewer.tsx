@@ -1,3 +1,4 @@
+import { on } from 'events';
 import React from 'react';
 import Reser from '../reser/Reser';
 import './ResponseViewer.styles.scss';
@@ -12,7 +13,9 @@ const ResponseViewer: React.FC<Props> = ({ res, onPop }) => {
         <div className="wrapper">
             <div className="in-wrapper">
                 {
-                    res.map(elem => <Reser key={elem.imdbID} elem={elem} onPop={onPop} />)
+                    ((res === null || res === undefined)) ?
+                        (<>{alert("No Data For This Movie\nTry Spelling Correctly")}</>) :
+                        (res.map(elem => <Reser key={elem.imdbID} elem={elem} onPop={onPop} />))
                 }
             </div>
         </div>

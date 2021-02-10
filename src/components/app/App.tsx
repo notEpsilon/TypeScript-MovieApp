@@ -8,14 +8,14 @@ import './App.styles.scss';
 interface StateType {
   typed: string,
   response: Array<any>,
-  selected: {} | null
+  selected: {} | null,
 };
 
 const App: React.FC = () => {
   const [state, setState] = useState<StateType>({
     typed: "",
     response: [],
-    selected: null
+    selected: null,
   });
 
   const apiUrl = "http://omdbapi.com/?apikey=3e1d48d8";
